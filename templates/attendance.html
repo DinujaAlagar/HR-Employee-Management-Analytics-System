@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Attendance | HRMS{% endblock %}
+{% block content %}
+<div class="page-head"><div><h2>Attendance Management</h2><p>Record and monitor employee attendance.</p></div></div>
+<div class="panel mb-4"><h5>Record Attendance</h5><form method="post" class="row g-3">
+<div class="col-md-3"><label class="form-label">Employee</label><select class="form-select" name="employee_id" required>{% for e in employees %}<option value="{{ e.employee_id }}">{{ e.full_name }}</option>{% endfor %}</select></div>
+<div class="col-md-2"><label class="form-label">Date</label><input class="form-control" type="date" name="date" required></div>
+<div class="col-md-2"><label class="form-label">Check In</label><input class="form-control" type="time" name="check_in"></div>
+<div class="col-md-2"><label class="form-label">Check Out</label><input class="form-control" type="time" name="check_out"></div>
+<div class="col-md-2"><label class="form-label">Status</label><select class="form-select" name="status"><option>Present</option><option>Absent</option><option>Late</option><option>Half Day</option><option>Leave</option></select></div>
+<div class="col-md-1 d-flex align-items-end"><button class="btn btn-primary w-100">Add</button></div>
+</form></div>
+<div class="panel table-responsive"><table class="table"><thead><tr><th>Date</th><th>Employee</th><th>Check In</th><th>Check Out</th><th>Status</th></tr></thead><tbody>{% for a in attendance %}<tr><td>{{ a.date }}</td><td>{{ a.full_name }}</td><td>{{ a.check_in or '-' }}</td><td>{{ a.check_out or '-' }}</td><td>{{ a.status }}</td></tr>{% endfor %}</tbody></table></div>
+{% endblock %}

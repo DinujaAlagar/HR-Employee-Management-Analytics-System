@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Login | HRMS{% endblock %}
+{% block public_content %}
+<div class="login-page">
+  <div class="login-card">
+    <div class="brand-mark">HR</div>
+    <h2>HR Management System</h2>
+    <p class="text-muted">HR Administrator Login</p>
+    <form method="post">
+      <label class="form-label">Email</label>
+      <input class="form-control mb-3" type="email" name="email" value="admin@hrsystem.com" required>
+      <label class="form-label">Password</label>
+      <input class="form-control mb-3" type="password" name="password" value="admin123" required>
+      <button class="btn btn-primary w-100">Sign In</button>
+    </form>
+    <div class="demo-box mt-3">Demo: admin@hrsystem.com / admin123</div>
+  </div>
+</div>
+{% endblock %}

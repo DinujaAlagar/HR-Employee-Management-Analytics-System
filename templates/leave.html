@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Leave | HRMS{% endblock %}
+{% block content %}
+<div class="page-head"><div><h2>Leave Management</h2><p>Review and manage employee leave requests.</p></div></div>
+<div class="panel mb-4"><h5>New Leave Request</h5><form method="post" class="row g-3">
+<div class="col-md-3"><label class="form-label">Employee</label><select class="form-select" name="employee_id">{% for e in employees %}<option value="{{ e.employee_id }}">{{ e.full_name }}</option>{% endfor %}</select></div>
+<div class="col-md-2"><label class="form-label">Leave Type</label><select class="form-select" name="leave_type"><option>Annual Leave</option><option>Casual Leave</option><option>Medical Leave</option><option>No-Pay Leave</option></select></div>
+<div class="col-md-2"><label class="form-label">Start</label><input class="form-control" type="date" name="start_date" required></div>
+<div class="col-md-2"><label class="form-label">End</label><input class="form-control" type="date" name="end_date" required></div>
+<div class="col-md-3"><label class="form-label">Reason</label><input class="form-control" name="reason"></div>
+<div class="col-12"><button class="btn btn-primary">Submit Request</button></div>
+</form></div>
+<div class="panel table-responsive"><table class="table align-middle"><thead><tr><th>Employee</th><th>Type</th><th>Period</th><th>Reason</th><th>Status</th><th>Action</th></tr></thead><tbody>{% for l in leaves %}<tr><td>{{ l.full_name }}</td><td>{{ l.leave_type }}</td><td>{{ l.start_date }} → {{ l.end_date }}</td><td>{{ l.reason or '-' }}</td><td>{{ l.status }}</td><td>{% if l.status=='Pending' %}<form class="d-inline" method="post" action="{{ url_for('update_leave',leave_id=l.leave_id,status='Approved') }}"><button class="btn btn-sm btn-success">Approve</button></form> <form class="d-inline" method="post" action="{{ url_for('update_leave',leave_id=l.leave_id,status='Rejected') }}"><button class="btn btn-sm btn-outline-danger">Reject</button></form>{% else %}-{% endif %}</td></tr>{% endfor %}</tbody></table></div>
+{% endblock %}

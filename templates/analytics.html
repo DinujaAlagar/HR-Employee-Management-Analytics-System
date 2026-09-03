@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Analytics | HRMS{% endblock %}
+{% block content %}
+<div class="page-head"><div><h2>HR Analytics</h2><p>Visual insights for evidence-based HR decision-making.</p></div></div>
+<div class="row g-4">
+<div class="col-lg-6"><div class="panel"><h5>Employees by Department</h5><canvas id="dept"></canvas></div></div>
+<div class="col-lg-6"><div class="panel"><h5>Attendance Status</h5><canvas id="att"></canvas></div></div>
+<div class="col-lg-12"><div class="panel"><h5>Average Performance by Department</h5><canvas id="perf"></canvas></div></div>
+</div>
+{% endblock %}
+{% block scripts %}<script>
+const dept={{ dept|list|tojson }}, att={{ attendance|list|tojson }}, perf={{ perf|list|tojson }};
+new Chart(document.getElementById('dept'),{type:'doughnut',data:{labels:dept.map(x=>x.label),datasets:[{data:dept.map(x=>x.value)}]},options:{responsive:true}});
+new Chart(document.getElementById('att'),{type:'pie',data:{labels:att.map(x=>x.label),datasets:[{data:att.map(x=>x.value)}]},options:{responsive:true}});
+new Chart(document.getElementById('perf'),{type:'bar',data:{labels:perf.map(x=>x.label),datasets:[{label:'Average Score',data:perf.map(x=>x.value)}]},options:{responsive:true,scales:{y:{beginAtZero:true,max:100}}}});
+</script>{% endblock %}

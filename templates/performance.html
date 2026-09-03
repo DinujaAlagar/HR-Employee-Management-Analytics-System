@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Performance | HRMS{% endblock %}
+{% block content %}
+<div class="page-head"><div><h2>Performance Management</h2><p>Record employee evaluations using measurable criteria.</p></div></div>
+<div class="panel mb-4"><h5>New Evaluation</h5><form method="post" class="row g-3">
+<div class="col-md-4"><label class="form-label">Employee</label><select class="form-select" name="employee_id">{% for e in employees %}<option value="{{ e.employee_id }}">{{ e.full_name }}</option>{% endfor %}</select></div>
+<div class="col-md-2"><label class="form-label">Date</label><input class="form-control" type="date" name="evaluation_date" required></div>
+{% for field,label in [('communication','Communication'),('teamwork','Teamwork'),('productivity','Productivity'),('leadership','Leadership'),('problem_solving','Problem Solving')] %}<div class="col-md-2"><label class="form-label">{{ label }} (0–100)</label><input class="form-control" type="number" min="0" max="100" name="{{ field }}" required></div>{% endfor %}
+<div class="col-12"><label class="form-label">Comments</label><textarea class="form-control" name="comments"></textarea></div><div class="col-12"><button class="btn btn-primary">Save Evaluation</button></div>
+</form></div>
+<div class="panel table-responsive"><table class="table"><thead><tr><th>Date</th><th>Employee</th><th>Communication</th><th>Teamwork</th><th>Productivity</th><th>Leadership</th><th>Problem Solving</th><th>Overall</th></tr></thead><tbody>{% for p in performance %}<tr><td>{{ p.evaluation_date }}</td><td>{{ p.full_name }}</td><td>{{ p.communication }}</td><td>{{ p.teamwork }}</td><td>{{ p.productivity }}</td><td>{{ p.leadership }}</td><td>{{ p.problem_solving }}</td><td><strong>{{ p.overall_score }}%</strong></td></tr>{% endfor %}</tbody></table></div>
+{% endblock %}

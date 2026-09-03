@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Dashboard | HRMS{% endblock %}
+{% block content %}
+<div class="page-head"><div><h2>HR Dashboard</h2><p>Overview of your organisation's workforce.</p></div></div>
+<div class="row g-3">
+{% for key,label,icon in [('employees','Total Employees','👥'),('active','Active Employees','✓'),('departments','Departments','🏢'),('on_leave','On Leave','🏖️'),('attendance_rate','Attendance Rate','📅'),('avg_performance','Avg Performance','⭐')] %}
+<div class="col-md-6 col-xl-4"><div class="stat-card"><div class="stat-icon">{{ icon }}</div><div><div class="stat-label">{{ label }}</div><div class="stat-value">{{ stats[key] }}{% if key in ['attendance_rate','avg_performance'] %}%{% endif %}</div></div></div>
+{% endfor %}
+</div>
+<div class="row g-4 mt-1">
+<div class="col-lg-7"><div class="panel"><h5>Employees by Department</h5><canvas id="deptChart"></canvas></div></div>
+<div class="col-lg-5"><div class="panel"><h5>Recently Added Employees</h5>
+{% for e in recent %}<div class="list-row"><div><strong>{{ e.full_name }}</strong><br><small>{{ e.position }} · {{ e.department_name }}</small></div><span class="badge text-bg-light">{{ e.employee_id }}</span></div>{% else %}<p>No employees.</p>{% endfor %}
+</div></div>
+</div>
+{% endblock %}
+{% block scripts %}<script>
+new Chart(document.getElementById('deptChart'),{type:'bar',data:{labels:{{ departments|map(attribute='department_name')|list|tojson }},datasets:[{label:'Employees',data:{{ departments|map(attribute='total')|list|tojson }} }]},options:{responsive:true,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,precision:0}}}});
+</script>{% endblock %}
