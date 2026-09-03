@@ -1,4 +1,4 @@
-﻿# HR Employee Management & Analytics System
+# HR Employee Management & Analytics System
 
 > A web-based Human Resource Management System designed to centralize employee information and streamline attendance, leave, performance, and HR analytics processes.
 
@@ -138,287 +138,350 @@ HR-Employee-Management-Analytics-System/
 ├── app.py
 ├── README.md
 └── requirements.txt
+```
 
-👥 Project Team
+---
+
+## 👥 Project Team
 
 This project was developed by a 16-member HRM team. Each member contributed to different areas of HRM, system development, testing, documentation, and project communication.
 
-No.	Team Member	Position / Responsibility
-1	Thinuja	Project Manager
-2	Janushika	HR Manager
-3	Tharanya	Recruitment Specialist
-4	Haskiya	HR Operations Executive
-5	Adhiya	Training & Development Officer
-6	Aysha	Performance Management Officer
-7	Aksha	HR Analytics Specialist
-8	Jakshika	Employee Relations Officer
-9	Dershan	IT & Systems Coordinator
-10	Premnath	Database Administrator
-11	Fathima	UI/UX Designer
-12	Asrif	Backend Developer
-13	Sisath	Frontend Developer
-14	Kabiska	Quality Assurance Officer
-15	Alagar	Documentation Officer
-16	Sumadhi	Presentation & Communication Lead
+| No. | Team Member | Position / Responsibility |
+|---|---|---|
+| 1 | Thinuja | Project Manager |
+| 2 | Janushika | HR Manager |
+| 3 | Tharanya | Recruitment Specialist |
+| 4 | Haskiya | HR Operations Executive |
+| 5 | Adhiya | Training & Development Officer |
+| 6 | Aysha | Performance Management Officer |
+| 7 | Aksha | HR Analytics Specialist |
+| 8 | Jakshika | Employee Relations Officer |
+| 9 | Dershan | IT & Systems Coordinator |
+| 10 | Premnath | Database Administrator |
+| 11 | Fathima | UI/UX Designer |
+| 12 | Asrif | Backend Developer |
+| 13 | Sisath | Frontend Developer |
+| 14 | Kabiska | Quality Assurance Officer |
+| 15 | Alagar | Documentation Officer |
+| 16 | Sumadhi | Presentation & Communication Lead |
 
-🧑‍💼 Team Responsibilities
-Project Management
+---
 
-Thinuja – Project Manager
+## 🧑‍💼 Team Responsibilities
 
+### Project Management
+
+**Thinuja – Project Manager**
 Responsible for coordinating the overall project, organizing team activities, monitoring progress, and supporting the achievement of project objectives.
 
-Human Resource Management
+### Human Resource Management
 
-Janushika – HR Manager
-
+**Janushika – HR Manager**
 Focused on HR requirements, system functionality, and the connection between HR practices and the developed system.
 
-Tharanya – Recruitment Specialist
-
+**Tharanya – Recruitment Specialist**
 Focused on recruitment-related HR practices and employee-related processes.
 
-Haskiya – HR Operations Executive
-
+**Haskiya – HR Operations Executive**
 Focused on day-to-day HR operations and employee administration requirements.
 
-Adhiya – Training & Development Officer
-
+**Adhiya – Training & Development Officer**
 Focused on employee training, development, and learning-related HR practices.
 
-Aysha – Performance Management Officer
-
+**Aysha – Performance Management Officer**
 Focused on employee performance evaluation and performance management processes.
 
-Aksha – HR Analytics Specialist
-
+**Aksha – HR Analytics Specialist**
 Focused on HR data analysis, HR metrics, and the analytics dashboard.
 
-Jakshika – Employee Relations Officer
-
+**Jakshika – Employee Relations Officer**
 Focused on employee relations and effective employee information management.
 
-Technology & Development
+### Technology & Development
 
-Dershan – IT & Systems Coordinator
-
+**Dershan – IT & Systems Coordinator**
 Focused on technical coordination and the integration of HR processes with the information system.
 
-Premnath – Database Administrator
-
+**Premnath – Database Administrator**
 Focused on database structure and management of employee, attendance, leave, and performance data.
 
-Asrif – Backend Developer
-
+**Asrif – Backend Developer**
 Focused on Python/Flask backend development and application logic.
 
-Sisath – Frontend Developer
-
+**Sisath – Frontend Developer**
 Focused on frontend development, page structure, and user interface integration.
 
-Fathima – UI/UX Designer
-
+**Fathima – UI/UX Designer**
 Focused on user interface design, usability, layout, and user experience.
 
-Quality, Documentation & Communication
+### Quality, Documentation & Communication
 
-Kabiska – Quality Assurance Officer
-
+**Kabiska – Quality Assurance Officer**
 Focused on system testing, identifying errors, and checking system functionality.
 
-Alagar – Documentation Officer
-
+**Alagar – Documentation Officer**
 Focused on project documentation, technical descriptions, and maintaining project information.
 
-Sumadhi – Presentation & Communication Lead
-
+**Sumadhi – Presentation & Communication Lead**
 Focused on project presentation, communication, and explaining the system to the audience.
 
-👤 Target Users
+---
+
+## 👤 Target Users
 
 The system is primarily designed for:
 
-HR Managers
-HR Officers
-HR Administrators
-Department Managers
-Small and medium-sized organizations
-⚙️ Installation & Setup
+- HR Managers
+- HR Officers
+- HR Administrators
+- Department Managers
+- Small and medium-sized organizations
+
+---
+
+## ⚙️ Installation & Setup
 
 Follow the steps below to run the project locally.
 
-1. Clone the repository
+### 1. Clone the repository
+```bash
 git clone https://github.com/DinujaAlagar/HR-Employee-Management-Analytics-System.git
-2. Navigate to the project folder
+```
+
+### 2. Navigate to the project folder
+```bash
 cd HR-Employee-Management-Analytics-System
-3. Create a virtual environment
+```
+
+### 3. Create a virtual environment
+```bash
 python -m venv venv
-4. Activate the virtual environment
-Windows PowerShell
+```
+
+### 4. Activate the virtual environment
+
+**Windows PowerShell**
+```powershell
 venv\Scripts\activate
-Windows Command Prompt
+```
+
+**Windows Command Prompt**
+```cmd
 venv\Scripts\activate
-5. Install dependencies
+```
+
+### 5. Install dependencies
+```bash
 pip install -r requirements.txt
-6. Run the application
+```
+
+### 6. Run the application
+```bash
 python app.py
-7. Open the application
+```
+
+### 7. Open the application
 
 Open your web browser and visit:
 
+```
 http://127.0.0.1:5000
+```
 
-🔐 Demo Login
+---
+
+## 🔐 Demo Login
 
 If enabled in the current application configuration, the academic demonstration login is:
 
-Field	Value
-Email	admin@hrsystem.com
-Password	admin123
+| Field | Value |
+|---|---|
+| Email | admin@hrsystem.com |
+| Password | admin123 |
 
 These credentials are intended only for academic demonstration purposes.
 
-📋 Demonstration Data
+---
+
+## 📋 Demonstration Data
 
 The system can contain demonstration data covering:
 
-Employee information
-Departments
-Positions
-Attendance records
-Leave records
-Performance evaluations
-Performance scores
-HR analytics
+- Employee information
+- Departments
+- Positions
+- Attendance records
+- Leave records
+- Performance evaluations
+- Performance scores
+- HR analytics
 
 All demonstration employee and HR information should be considered fictional academic data.
 
-🖥️ Application Screenshots
+---
 
-Screenshots can be added here to demonstrate the main system interfaces.
+## 🖥️ Application Screenshots
 
-🔐 Login Page
-🏠 Dashboard
-👥 Employee Management
-🕒 Attendance Management
-🏖️ Leave Management
-📊 Performance Management
-📈 HR Analytics
+### 🔐 Login Page
+![Login Page](login-page.png)
 
-🎓 HRM Learning Outcomes
+### 🏠 Dashboard
+![Dashboard](dashboard.png)
+
+### 👥 Employee Management
+![Employee Management](employee-management.png)
+
+### 🕒 Attendance Management
+![Attendance Management](attendance-management.png)
+
+### 🏖️ Leave Management
+![Leave Management](leave-management.png)
+
+### 📊 Performance Management
+![Performance Management](performance-management.png)
+
+### 📈 HR Analytics
+![HR Analytics](hr-analytics.png)
+
+---
+
+## 🎓 HRM Learning Outcomes
 
 This project demonstrates practical understanding of:
 
-Human Resource Management systems.
-Employee information management.
-Attendance administration.
-Leave management.
-Performance management.
-HR analytics.
-Data-driven decision-making.
-HR digital transformation.
-Team collaboration.
-Project management.
-Database management.
-Web application development.
-Software testing.
-Technical documentation.
-Professional communication and presentation.
-💡 HRM Significance
+- Human Resource Management systems.
+- Employee information management.
+- Attendance administration.
+- Leave management.
+- Performance management.
+- HR analytics.
+- Data-driven decision-making.
+- HR digital transformation.
+- Team collaboration.
+- Project management.
+- Database management.
+- Web application development.
+- Software testing.
+- Technical documentation.
+- Professional communication and presentation.
+
+---
+
+## 💡 HRM Significance
 
 The project demonstrates how digital HR systems can support modern HR practices by:
 
-Improving employee record organization.
-Reducing manual HR administration.
-Supporting efficient attendance monitoring.
-Simplifying leave administration.
-Supporting structured performance evaluation.
-Improving access to HR information.
-Providing HR analytics for decision-making.
-Supporting digital transformation in HR.
-🔒 Security & Privacy
+- Improving employee record organization.
+- Reducing manual HR administration.
+- Supporting efficient attendance monitoring.
+- Simplifying leave administration.
+- Supporting structured performance evaluation.
+- Improving access to HR information.
+- Providing HR analytics for decision-making.
+- Supporting digital transformation in HR.
+
+---
+
+## 🔒 Security & Privacy
 
 This system has been developed primarily for academic and demonstration purposes.
 
 For real-world production use, additional security measures should be implemented, including:
 
-Secure password hashing.
-Role-based access control.
-Strong authentication.
-Input validation.
-Session security.
-Database security.
-Data encryption.
-Audit logging.
-Secure deployment.
-Protection of confidential employee information.
-🔮 Future Enhancements
+- Secure password hashing.
+- Role-based access control.
+- Strong authentication.
+- Input validation.
+- Session security.
+- Database security.
+- Data encryption.
+- Audit logging.
+- Secure deployment.
+- Protection of confidential employee information.
+
+---
+
+## 🔮 Future Enhancements
 
 Possible future improvements include:
 
-👤 Employee self-service portal.
-🔑 Role-based authentication.
-📧 Automated email notifications.
-💰 Payroll management.
-📋 Recruitment management.
-🎓 Training management.
-📅 Employee calendar.
-📱 Mobile-responsive interface.
-📊 Advanced HR dashboards.
-📄 HR report generation.
-📥 Excel/PDF report export.
-☁️ Cloud deployment.
-🔔 Automated notifications.
-📈 Predictive HR analytics.
-🌟 Project Benefits
+- 👤 Employee self-service portal.
+- 🔑 Role-based authentication.
+- 📧 Automated email notifications.
+- 💰 Payroll management.
+- 📋 Recruitment management.
+- 🎓 Training management.
+- 📅 Employee calendar.
+- 📱 Mobile-responsive interface.
+- 📊 Advanced HR dashboards.
+- 📄 HR report generation.
+- 📥 Excel/PDF report export.
+- ☁️ Cloud deployment.
+- 🔔 Automated notifications.
+- 📈 Predictive HR analytics.
+
+---
+
+## 🌟 Project Benefits
 
 The system can help organizations to:
 
-Reduce manual HR administration.
-Organize employee records efficiently.
-Improve attendance monitoring.
-Simplify leave management.
-Support structured performance evaluation.
-Improve access to HR information.
-Generate useful HR insights.
-Support evidence-based HR decisions.
-Improve overall HR operational efficiency.
-📌 Project Status
+- Reduce manual HR administration.
+- Organize employee records efficiently.
+- Improve attendance monitoring.
+- Simplify leave management.
+- Support structured performance evaluation.
+- Improve access to HR information.
+- Generate useful HR insights.
+- Support evidence-based HR decisions.
+- Improve overall HR operational efficiency.
 
-Status: Completed – Academic Project
+---
+
+## 📌 Project Status
+
+**Status:** Completed – Academic Project
 
 The current system demonstrates core functionality for:
 
-Employee management
-Attendance management
-Leave management
-Performance management
-HR analytics
-Dashboard-based HR information management
-🤝 Team Collaboration
+- Employee management
+- Attendance management
+- Leave management
+- Performance management
+- HR analytics
+- Dashboard-based HR information management
+
+---
+
+## 🤝 Team Collaboration
 
 The project was developed through collaborative work between HRM-focused and technology-focused team members.
 
 The team combined:
 
-HRM Knowledge + Technology + Database Management + Analytics + Communication
+**HRM Knowledge + Technology + Database Management + Analytics + Communication**
 
 to develop a practical digital HR solution.
 
-🎓 Academic Purpose
+---
+
+## 🎓 Academic Purpose
 
 This project was developed as an academic Human Resource Management and Information Technology project.
 
 It demonstrates the practical application of HRM concepts together with:
 
-Web development
-Database management
-HR analytics
-Digital HR practices
-Teamwork
-Project management
-Professional communication
-⚠️ Disclaimer
+- Web development
+- Database management
+- HR analytics
+- Digital HR practices
+- Teamwork
+- Project management
+- Professional communication
+
+---
+
+## ⚠️ Disclaimer
 
 This application is intended for academic and educational purposes only.
 
@@ -426,14 +489,18 @@ It should not be used as a production HR management system without additional se
 
 All demonstration HR information should be treated as fictional academic data.
 
-📄 License
+---
+
+## 📄 License
 
 This project is developed for academic purposes.
 
 The project may be used or modified for educational purposes with appropriate acknowledgement of the original project team.
 
-🔗 GitHub Repository
+---
 
-HR Employee Management & Analytics System
+## 🔗 GitHub Repository
+
+**HR Employee Management & Analytics System**
 
 https://github.com/DinujaAlagar/HR-Employee-Management-Analytics-System
