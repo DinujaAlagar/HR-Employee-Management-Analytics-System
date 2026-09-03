@@ -1,4 +1,4 @@
-# HR Employee Management & Analytics System
+﻿# HR Employee Management & Analytics System
 
 > A web-based Human Resource Management System designed to centralize employee information and streamline attendance, leave, performance, and HR analytics processes.
 
@@ -299,31 +299,45 @@ Screenshots can be added here to demonstrate the main system interfaces.
 
 🔐 Login Page
 
-c:\Users\Admin\Pictures\Screenshots\Screenshot 2026-09-03 130659.png
+
 
 🏠 Dashboard
 
-Add your dashboard screenshot here.
+
+
+
+
 
 👥 Employee Management
 
-Add your employee management screenshot here.
+
+
 
 🕒 Attendance Management
 
-Add your attendance screenshot here.
+
+
+
+
+
+
+
+
+
+
+
+
 
 🏖️ Leave Management
 
-Add your leave management screenshot here.
 
 📊 Performance Management
 
-Add your performance screenshot here.
+
 
 📈 HR Analytics
 
-Add your analytics screenshot here.
+
 
 🎓 HRM Learning Outcomes
 
