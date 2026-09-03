@@ -298,46 +298,12 @@ All demonstration employee and HR information should be considered fictional aca
 Screenshots can be added here to demonstrate the main system interfaces.
 
 🔐 Login Page
-
-
-
 🏠 Dashboard
-
-
-
-
-
-
 👥 Employee Management
-
-
-
-
 🕒 Attendance Management
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 🏖️ Leave Management
-
-
 📊 Performance Management
-
-
-
 📈 HR Analytics
-
-
 
 🎓 HRM Learning Outcomes
 
